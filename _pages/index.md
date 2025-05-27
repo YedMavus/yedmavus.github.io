@@ -16,5 +16,5 @@ My research interests lie in:
 
 I aim to contribute to impactful scientific research, especially in interdisciplinary fields that combine machine learning with biomedical applications.
 
-📄 [View my CV](../cv/Suvam_CV_Verbose.pdf)  
-📬 [Email](mailto:suvamdey2002@gmail.com) | [GitHub](https://github.com/yedmavus) | [LinkedIn](https://www.linkedin.com/in/suvam-dey)
+[View my CV](../cv/Suvam_CV_Verbose.pdf)  
+[Email](mailto:suvamdey2002@gmail.com) | [GitHub](https://github.com/yedmavus) | [LinkedIn](https://www.linkedin.com/in/suvam-dey)
