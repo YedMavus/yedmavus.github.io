@@ -14,13 +14,13 @@ author:
   avatar           : "profile.png"  # Add a profile image in /images/
   name             : "Suvam Dey"
   pronouns         : "he/him"
-  bio              : "M.Tech student at IISc exploring ML for Signal, Biomedical, and Brain Interfaces."
+  bio              : "M.Tech student at IISc exploring ML for Class Incremental learning, Computer Vision, Signal, Biomedical, and Brain Interfaces."
   location         : "Bengaluru, India"
   employer         : "Indian Institute of Science (IISc)"
   email            : "suvamdey2002@gmail.com"
 
-  googlescholar    : "https://scholar.google.com/citations?user=PS_CX0AAAAAJ"  # Replace with your real profile
-  orcid            : "https://orcid.org/0000-0000-0000-0000"  # Replace with your ORCID if available
+  googlescholar    : "https://scholar.google.com/citations?user=ZKDDrFAAAAAJ"  # Replace with your real profile
+  orcid            : "https://orcid.org/0000-0002-1850-0850"  # Replace with your ORCID if available
   github           : "yedmavus"
   linkedin         : "suvam-dey"
 
