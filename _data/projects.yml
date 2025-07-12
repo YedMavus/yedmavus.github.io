@@ -1,54 +1,51 @@
+# _data/projects.yml
+
 - title: "BCI Speller using P300"
-  institution: IIEST, Shibpur
-  year: 2023 – 2024
-  description: "Used P300 signals from EEG dataset to identify intended characters from a grid. Utilized BCI Competition III Dataset and developed speller classification logic."
+  description: "Developed a Brain-Computer Interface (BCI) system using EEG data to identify user-intended characters using P300 event-related potentials. Used BCI Competition III dataset for training and testing."
+  github: "https://github.com/YedMavus"
+  category: work
+  importance: 1
 
-- title: "Lane Detection in Low Light Conditions"
-  institution: IISc, Bengaluru
-  year: 2024
-  description: "Enhanced images using Retinex theory and applied Hough Transform for lane detection."
+- title: "Lane Detection in Low Light"
+  description: "Implemented lane detection using Hough Transform after enhancing visibility in low-light images via Retinex-based image enhancement techniques."
+  category: work
+  importance: 2
 
-- title: "Image Binarization and Denoising"
-  institution: IISc, Bengaluru
-  year: 2024
-  description: 
-    - "Implemented Otsu’s method with adaptive tiling."
-    - "Explored Gaussian and Bilateral filtering for denoising."
+- title: "Adaptive Otsu Binarization & Denoising"
+  description: "Created an adaptive Otsu binarization algorithm by tiling and analyzed effects of Gaussian and Bilateral filtering on noisy images."
+  category: work
+  importance: 3
 
 - title: "Image Classification with Transfer Learning"
-  institution: IISc, Bengaluru
-  year: 2024
-  description: "Finetuned pretrained deep neural networks on custom datasets for multi-class classification tasks."
+  description: "Fine-tuned pretrained convolutional neural networks on a custom dataset to perform accurate image classification using Keras and TensorFlow."
+  category: work
+  importance: 4
 
-- title: "Air Pollution Monitoring and Purification"
-  institution: IIEST, Shibpur
-  year: 2022 – 2023
-  description: 
-    - "Used Arduino with gas and humidity sensors to monitor air quality."
-    - "Displayed data in real time using a web dashboard."
+- title: "Air Pollution Monitoring System"
+  description: "Designed a real-time air pollution monitoring system using Arduino and gas/humidity sensors, and displayed data on a live web dashboard."
+  url: "https://iot-etciiest-project.netlify.app/"
+  github: "https://github.com/YedMavus"
+  category: work
+  importance: 5
 
-- title: "DSB-C Modulation using Gilbert Cell"
-  institution: IIEST, Shibpur
-  year: 2022
-  description: 
-    - "Designed a Gilbert Cell Modulator and Envelope Detector."
-    - "Tested using NI Multisim and implemented on breadboard."
+- title: "Gilbert Cell Amplitude Modulator"
+  description: "Simulated and implemented a DSB-C amplitude modulator using a Gilbert Cell multiplier and an envelope detector. Tested on breadboard after NI Multisim simulation."
+  category: work
+  importance: 6
 
-- title: "ML Project Compilation"
-  institution: IIEST, Shibpur
-  year: 2021 – Present
-  description: 
-    - "COVID-19 regression analysis"
-    - "MNIST digit classification"
-    - "Transferred Learning on Dog Breeds"
-    - "Twitter sentiment prediction"
-
-- title: "Blink-controlled Chrome Dino Game"
-  institution: Self Project
-  year: 2023
-  description: "Built a game where the Chrome Dino is controlled by eye-blinks using facial recognition."
+- title: "Chrome Dino Game with Eye Blink Control"
+  description: "Used OpenCV and facial landmark detection to create a version of the Chrome Dino game controlled by eye-blinks. Useful as an accessibility demo."
+  github: "https://github.com/YedMavus/Blink_Dino"
+  category: fun
+  importance: 1
 
 - title: "Snake Game in Python"
-  institution: Self Project
-  year: 2023
-  description: "Recreated the old Nokia snake game in Python. Future goal: Use RL agent to learn game."
+  description: "Rebuilt the nostalgic Snake game using Python and OOP concepts. A testbed for future reinforcement learning experiments."
+  github: "https://github.com/YedMavus/snake"
+  category: fun
+  importance: 2
+
+- title: "ML Projects Compilation"
+  description: "Projects include MNIST digit classification, COVID-19 case prediction, transferred learning for dog breed classification, and Twitter sentiment analysis."
+  category: work
+  importance: 7
