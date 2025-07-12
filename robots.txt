@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://manogna-s.github.io/sitemap.xml
+Sitemap: https://yedmavus.github.io/sitemap.xml
