@@ -1,0 +1,54 @@
+- title: "BCI Speller using P300"
+  institution: IIEST, Shibpur
+  year: 2023 – 2024
+  description: "Used P300 signals from EEG dataset to identify intended characters from a grid. Utilized BCI Competition III Dataset and developed speller classification logic."
+
+- title: "Lane Detection in Low Light Conditions"
+  institution: IISc, Bengaluru
+  year: 2024
+  description: "Enhanced images using Retinex theory and applied Hough Transform for lane detection."
+
+- title: "Image Binarization and Denoising"
+  institution: IISc, Bengaluru
+  year: 2024
+  description: 
+    - "Implemented Otsu’s method with adaptive tiling."
+    - "Explored Gaussian and Bilateral filtering for denoising."
+
+- title: "Image Classification with Transfer Learning"
+  institution: IISc, Bengaluru
+  year: 2024
+  description: "Finetuned pretrained deep neural networks on custom datasets for multi-class classification tasks."
+
+- title: "Air Pollution Monitoring and Purification"
+  institution: IIEST, Shibpur
+  year: 2022 – 2023
+  description: 
+    - "Used Arduino with gas and humidity sensors to monitor air quality."
+    - "Displayed data in real time using a web dashboard."
+
+- title: "DSB-C Modulation using Gilbert Cell"
+  institution: IIEST, Shibpur
+  year: 2022
+  description: 
+    - "Designed a Gilbert Cell Modulator and Envelope Detector."
+    - "Tested using NI Multisim and implemented on breadboard."
+
+- title: "ML Project Compilation"
+  institution: IIEST, Shibpur
+  year: 2021 – Present
+  description: 
+    - "COVID-19 regression analysis"
+    - "MNIST digit classification"
+    - "Transferred Learning on Dog Breeds"
+    - "Twitter sentiment prediction"
+
+- title: "Blink-controlled Chrome Dino Game"
+  institution: Self Project
+  year: 2023
+  description: "Built a game where the Chrome Dino is controlled by eye-blinks using facial recognition."
+
+- title: "Snake Game in Python"
+  institution: Self Project
+  year: 2023
+  description: "Recreated the old Nokia snake game in Python. Future goal: Use RL agent to learn game."
