@@ -8,26 +8,14 @@
   #   - name: Languages
   #     value: English, German
 
-- title: PES University
-  type: time_table
-  contents:
-    - title: Mathematics for Machine Learning
-      institution:  #Visiting Faculty
-      year: Jan-Apr 2023
-      description:
-         - Visiting Faculty
+
 - title: Indian Institute of Science
   type: time_table
   contents:
     - title: E9241 Digital Image Processing
       institution: #Aug-Dec 2021
-      year: Aug-Dec 2023, 2021
-    - title: E9201 Digital Signal Processing
-      institution: #Aug-Dec 2021
-      year: Aug-Dec 2023, 2022
-    - title: E9246 Advanced Image Processing
-      institution: #Aug-Dec 2021
-      year: Jan-Apr 2023, 2024
+      year: Aug-Dec 2025
+
 #      description:
 #         - Description 1.
       #   - Description 2.
@@ -47,13 +35,6 @@
 
 
 
-
-- title: NPTEL
-  type: time_table
-  contents:
-    - title: Deep Learning for Computer Vision
-      institution: #Aug-Dec 2021
-      year: Aug-Oct 2022
 
 
 # - title: Research Interests
