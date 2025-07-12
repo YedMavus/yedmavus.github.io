@@ -1,98 +1,171 @@
-# - title: General Information
-#   type: map
-  # contents:
-  #   - name: Full Name
-  #     value: Albert Einstein
-  #   - name: Date of Birth
-  #     value: 14th March 1879
-  #   - name: Languages
-  #     value: English, German
+# # - title: General Information
+# #   type: map
+#   # contents:
+#   #   - name: Full Name
+#   #     value: Albert Einstein
+#   #   - name: Date of Birth
+#   #     value: 14th March 1879
+#   #   - name: Languages
+#   #     value: English, German
+
+# - title: Education
+#   type: time_table
+#   contents:
+#     - title: M.Tech in Signal Processing
+#       institution: Image Analysis and Computer Vision Lab, IISc, Bangalore
+#       year: 2024 - 2026
+#       # description:
+#       #   - Description 1.
+#       #   - Description 2.
+#       #   - title: Description 3.
+#       #     contents:
+#       #       - Sub-description 1.
+#       #       - Sub-description 2.
+#     - title: B.Tech in Electronics and Telecommunication Engineering
+#       institution: IIEST, Shibpur
+#       year: 2020 - 2024
+#       # description:
+#       #   - Description 1.
+#       #   - Description 2.
+
+# - title: Research Interests
+#   type: nested_list
+#   contents:
+#     - title: Continual Learning
+#       items:
+#         - Making a model learn while not forgetting previous knowledge is a challenging problem in ML. With the advent of VLMs, a new avenue in this domain has opened up.
+#     - title: Computer Vision
+#       items:
+#         - I find Computer Vision interesting, and quite intuitive.
+#     - title: Neuroscience
+#       items:
+# - title: Research Experience
+#   type: time_table
+#   contents:
+#     - title: Graduate Research Intern (GRI)
+#       institution: MITACS, Canada
+#       year: 2023
+#       description:
+#         - Interned at Department of Computer Science, Universite de Moncton.
+#         # - title: Description 3.
+#         #   contents:
+#         #     - Sub-description 1.
+#         #     - Sub-description 2.
+#     - title: Research Intern
+#       institution: Indian Academy of Science
+#       year: 2022
+#       description:
+#         - Worked on EEG data analysis to ascertain breathing mechanisms in the brain during slow breathing using functional connectivity.
+
+#     # - title: Director
+#     #   institution: Kaiser Wilhelm Institute for Physics, Berlin, Germany.
+#     #   year: 1917-1933
+
+#     # - title: Professor of Theoretical Physics
+#     #   institution: Karl-Ferdinand University, Prague, Czechoslovakia
+#     #   year: 1911 - 1917
+#     #   description:
+
+#     # - title: Associate Professor of Theoretical Physics
+#     #   institution: University of Zurich, Zurich, Switzerland
+#     #   year: 1909 - 1911
+
+# # - title: Open Source Projects
+# #   type: time_table
+# #   contents:
+# #     - title: <a href="https://github.com/alshedivat/al-folio">al-folio</a>
+# #       year: 2015-now
+# #       description: A beautiful, simple, clean, and responsive Jekyll theme for academics.
+
+
+
+# - title: Honors and Awards
+#   type: time_table
+#   contents:
+#     - year: 2024
+#       items:
+#         - Ranked 204 among more than 39k candidates appearing for GATE DA exam and accepted as a student at IISc, Bengaluru.
+#         - Selected as one of the 146 Indian recipents of Erasmus Mundus Scholarship for MS (as a student at Neuro-Data program).
+#     - year: 2023
+#       items:
+#         - Selected as a MITACS GRI Intern
+#     - year: 2022
+#         - Selected as SRFP Intern by Indian Academy of Science
+
+
+# # - title: Other Interests
+# #   type: list
+# #   contents:
+# #     - <u>Hobbies:</u> Sketching, Music, etc.
 
 - title: Education
   type: time_table
   contents:
     - title: M.Tech in Signal Processing
-      institution: Image Analysis and Computer Vision Lab, IISc, Bangalore
+      institution: Indian Institute of Science (IISc), Bengaluru
       year: 2024 - 2026
-      # description:
-      #   - Description 1.
-      #   - Description 2.
-      #   - title: Description 3.
-      #     contents:
-      #       - Sub-description 1.
-      #       - Sub-description 2.
+      description:
+        - Current CGPA: 8.2 (at the end of 2nd semester)
     - title: B.Tech in Electronics and Telecommunication Engineering
-      institution: IIEST, Shibpur
+      institution: Indian Institute of Engineering Science and Technology (IIEST), Shibpur
       year: 2020 - 2024
-      # description:
-      #   - Description 1.
-      #   - Description 2.
+      description:
+        - CGPA: 9.13
+
 
 - title: Research Interests
   type: nested_list
   contents:
     - title: Continual Learning
       items:
-        - Making a model learn while not forgetting previous knowledge is a challenging problem in ML. With the advent of VLMs, a new avenue in this domain has opened up.
+        - Exploring knowledge retention in evolving systems and federated learning in real-time low-latency applications. Making a model learn while not forgetting previous knowledge is a challenging problem in ML. With the advent of VLMs, a new avenue in this domain has opened up.
     - title: Computer Vision
       items:
-        - I find Computer Vision interesting, and quite intuitive.
+        - Interested in video/image processing, denoising, enhancement, and detection pipelines.
     - title: Neuroscience
       items:
+        - Application of EEG signal analysis and functional connectivity to understand brain behavior during breathing patterns.
+
 - title: Research Experience
   type: time_table
   contents:
     - title: Graduate Research Intern (GRI)
-      institution: MITACS, Canada
-      year: 2023
+      institution: MITACS Globalink, Université de Moncton, Canada
+      year: May 2023 – Aug 2023
       description:
-        - Interned at Department of Computer Science, Universite de Moncton.
-        # - title: Description 3.
-        #   contents:
-        #     - Sub-description 1.
-        #     - Sub-description 2.
-    - title: Research Intern
-      institution: Indian Academy of Science
-      year: 2022
+        - Worked on subject identification using behavioral cues from IoT data (acceleration and magnetic sensors).
+        - Implemented time-series classification and federated learning achieving 98.04% accuracy within 0.06 ms.
+        - Resulted in IEEE ICC 2024 paper presentation.
+    - title: Research Intern (SRFP)
+      institution: MILE Lab, Department of Electrical Engineering, IISc, Bengaluru
+      year: May 2022 – July 2022
       description:
-        - Worked on EEG data analysis to ascertain breathing mechanisms in the brain during slow breathing using functional connectivity.
-
-    # - title: Director
-    #   institution: Kaiser Wilhelm Institute for Physics, Berlin, Germany.
-    #   year: 1917-1933
-
-    # - title: Professor of Theoretical Physics
-    #   institution: Karl-Ferdinand University, Prague, Czechoslovakia
-    #   year: 1911 - 1917
-    #   description:
-
-    # - title: Associate Professor of Theoretical Physics
-    #   institution: University of Zurich, Zurich, Switzerland
-    #   year: 1909 - 1911
-
-# - title: Open Source Projects
-#   type: time_table
-#   contents:
-#     - title: <a href="https://github.com/alshedivat/al-folio">al-folio</a>
-#       year: 2015-now
-#       description: A beautiful, simple, clean, and responsive Jekyll theme for academics.
-
-
+        - Analyzed EEG data for inhalation/exhalation cycles using MNE Python and Brainconn.
+        - Applied functional connectivity and graph theory metrics for binary classification (99.08% accuracy).
+        - Resulted in best paper award at IEEE CONECCT 2023.
+    - title: Undergraduate Thesis
+      institution: IIEST, Shibpur
+      year: Aug 2023 – May 2024
+      description:
+        - Developed a Brain-Computer Interface (BCI) speller using P300 signals from a public EEG dataset.
 
 - title: Honors and Awards
   type: time_table
   contents:
     - year: 2024
       items:
-        - Ranked 204 among more than 39k candidates appearing for GATE DA exam and accepted as a student at IISc, Bengaluru.
-        - Selected as one of the 146 Indian recipents of Erasmus Mundus Scholarship for MS (as a student at Neuro-Data program).
+        - GAABESU Research Excellence Award
+        - Ranked 204 in GATE 2024 (DA stream); IISc admission offer
+        - Selected for Erasmus Mundus Neurodata - Brain and Data Science MS Program
     - year: 2023
       items:
-        - Selected as a MITACS GRI Intern
-        - Secured a rank of 172 in Karnataka Common Entrance Test (KCET).
+        - Scored 325 in GRE General Test and 115 in TOEFL iBT test
+        - Selected as a MITACS Globalink Research Intern
+        - Qualified GATE ECE 2023
+    - year: 2022
+      items:
+        - Selected for Indian Academy of Science SRFP
+    - year: 2020
+      items:
+        - Secured 98.76 percentile in JEE Mains, qualified JEE Advanced
 
-
-# - title: Other Interests
-#   type: list
-#   contents:
-#     - <u>Hobbies:</u> Sketching, Music, etc.
