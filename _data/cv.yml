@@ -11,9 +11,9 @@
 - title: Education
   type: time_table
   contents:
-    - title: PhD
+    - title: M.Tech in Signal Processing
       institution: Image Analysis and Computer Vision Lab, IISc, Bangalore
-      year: 2020 -
+      year: 2024 - 2026
       # description:
       #   - Description 1.
       #   - Description 2.
@@ -21,9 +21,9 @@
       #     contents:
       #       - Sub-description 1.
       #       - Sub-description 2.
-    - title: B.Tech
-      institution: EEE, NITK Surathkal
-      year: 2013 - 2017
+    - title: B.Tech in Electronics and Telecommunication Engineering
+      institution: IIEST, Shibpur
+      year: 2020 - 2024
       # description:
       #   - Description 1.
       #   - Description 2.
@@ -31,38 +31,31 @@
 - title: Research Interests
   type: nested_list
   contents:
-    - title: Unsupervised Domain Adaptation
+    - title: Continual Learning
       items:
-        - Designing methods to learn using labeled source along with unlabeled target domain data to obtain robust representations generalizing across domains.
-    - title: Cross-Domain Few Shot Learning
+        - Making a model learn while not forgetting previous knowledge is a challenging problem in ML. With the advent of VLMs, a new avenue in this domain has opened up.
+    - title: Computer Vision
       items:
-        - Designing effective methods capable of adapting a base model to an unseen task from an unseen domain given limited training samples.
-    - title: Source-Free Domain Adaptation
+        - I find Computer Vision interesting, and quite intuitive.
+    - title: Neuroscience
       items:
-        - The objective is to adapt a model trained on a source domain to a target domain using only unlabelled samples.
-    - title: Test-Time Adaptation
-      items:
-        - The goal is to adapt a source trained model to a test domain in an online manner. The test domains can be continuously changing as well.
-
-- title: Work Experience
+- title: Research Experience
   type: time_table
   contents:
-    - title: Software Engineer
-      institution: PathPartner Technology, Bangalore
-      year: 2017 - 2020
+    - title: Graduate Research Intern (GRI)
+      institution: MITACS, Canada
+      year: 2023
       description:
-        - Worked on CNN based Face Detection for Driver Monitoring System.
-        - Porting Deep Convolutional Models to edge devices.
-        - Developed SIMD vectorized algorithms to support TensorFlow APIs for Cadence Vision DSPs.
+        - Interned at Department of Computer Science, Universite de Moncton.
         # - title: Description 3.
         #   contents:
         #     - Sub-description 1.
         #     - Sub-description 2.
-    - title: Intern
-      institution: Wipro Technologies, Bangalore
-      year: 2016
+    - title: Research Intern
+      institution: Indian Academy of Science
+      year: 2022
       description:
-        - Worked on Pedestrian Detection module as a part of “Wipro Autonomous Vehicle” team, using HOG feature extractor and SVM as classifier.
+        - Worked on EEG data analysis to ascertain breathing mechanisms in the brain during slow breathing using functional connectivity.
 
     # - title: Director
     #   institution: Kaiser Wilhelm Institute for Physics, Berlin, Germany.
@@ -89,12 +82,13 @@
 - title: Honors and Awards
   type: time_table
   contents:
-    - year: 2022
+    - year: 2024
       items:
-        - Recipient of the Prime Minister’s Research Fellowship (PMRF).
-    - year: 2013
+        - Ranked 204 among more than 39k candidates appearing for GATE DA exam and accepted as a student at IISc, Bengaluru.
+        - Selected as one of the 146 Indian recipents of Erasmus Mundus Scholarship for MS (as a student at Neuro-Data program).
+    - year: 2023
       items:
-        - Secured a state rank of 254 in Joint Entrance Exam (JEE) Main.
+        - Selected as a MITACS GRI Intern
         - Secured a rank of 172 in Karnataka Common Entrance Test (KCET).
 
 
