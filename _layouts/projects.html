@@ -1,0 +1,42 @@
+---
+layout: default
+---
+<!-- _layouts/projects.html -->
+        <div class="post">
+
+          <header class="post-header">
+            <h1 class="post-title">{{ page.title }}</h1>
+            <p class="post-description">{{ page.description }}</p>
+          </header>
+
+          <article>
+            <div class="projects">
+              {% assign sorted_projects = site.data.projects | sort: 'importance' %}
+              {% for category in page.display_categories %}
+                <h2 class="category">{{ category }}</h2>
+                {% assign categorized_projects = sorted_projects | where: "category", category %}
+                {% for project in categorized_projects %}
+                  <div class="card mt-3 p-3">
+                    <h3 class="card-title font-weight-medium">{{ project.title }}</h3>
+                    <div class="card-text">
+                      <p>{{ project.description }}</p>
+                      <div class="project-links">
+                        {% if project.github %}
+                          <a href="{{ project.github }}" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-primary mr-2">
+                            <i class="fab fa-github"></i> GitHub
+                          </a>
+                        {% endif %}
+                        {% if project.url %}
+                          <a href="{{ project.url }}" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-secondary">
+                            <i class="fas fa-external-link-alt"></i> Demo
+                          </a>
+                        {% endif %}
+                      </div>
+                    </div>
+                  </div>
+                {% endfor %}
+              {% endfor %}
+            </div>
+          </article>
+
+        </div>
