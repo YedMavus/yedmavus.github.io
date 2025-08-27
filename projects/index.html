@@ -12,8 +12,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Projects | Suvam  Dey</title>
     <meta name="author" content="Suvam  Dey">
-    <meta name="description" content="A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
-">
+    <meta name="description" content="Some projects I want to showcase.">
     <meta name="keywords" content="jekyll, jekyll-theme, academic-website, portfolio-website">
 
 
@@ -75,8 +74,8 @@
               <li class="nav-item ">
                 <a class="nav-link" href="/publications/">publications</a>
               </li>
-              <li class="nav-item ">
-                <a class="nav-link" href="/projects/">projects</a>
+              <li class="nav-item active">
+                <a class="nav-link" href="/projects/">Projects<span class="sr-only">(current)</span></a>
               </li>
               <li class="nav-item ">
                 <a class="nav-link" href="/cv/">cv</a>
@@ -108,30 +107,146 @@
 
     <!-- Content -->
     <div class="container mt-5">
-      <!-- page.html -->
+      <!-- _layouts/projects.html -->
         <div class="post">
 
           <header class="post-header">
             <h1 class="post-title">Projects</h1>
-            <p class="post-description"></p>
+            <p class="post-description">Some projects I want to showcase.</p>
           </header>
 
           <article>
-            <!-- _includes/projects.html -->
-<div class="grid-sizer"></div>
-<div class="grid-item">
-  <a href="">
-      <div class="card hoverable">
-        <div class="card-body">
-          <h2 class="card-title text-lowercase"></h2>
-          <p class="card-text"></p>
-          <div class="row ml-1 mr-1 p-0">
-          </div>
-        </div>
-      </div>
-    </a>
-</div>
-
+            <div class="projects">
+              
+              
+                <h2 class="category">work</h2>
+                
+                
+                  <div class="card mt-3 p-3">
+                    <h3 class="card-title font-weight-medium">BCI Speller using P300</h3>
+                    <div class="card-text">
+                      <p>Developed a Brain-Computer Interface (BCI) system using EEG data to identify user-intended characters using P300 event-related potentials. Used BCI Competition III dataset for training and testing.</p>
+                      <div class="project-links">
+                        
+                          <a href="https://github.com/YedMavus" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-primary mr-2">
+                            <i class="fab fa-github"></i> GitHub
+                          </a>
+                        
+                        
+                      </div>
+                    </div>
+                  </div>
+                
+                  <div class="card mt-3 p-3">
+                    <h3 class="card-title font-weight-medium">Lane Detection in Low Light</h3>
+                    <div class="card-text">
+                      <p>Implemented lane detection using Hough Transform after enhancing visibility in low-light images via Retinex-based image enhancement techniques.</p>
+                      <div class="project-links">
+                        
+                        
+                      </div>
+                    </div>
+                  </div>
+                
+                  <div class="card mt-3 p-3">
+                    <h3 class="card-title font-weight-medium">Adaptive Otsu Binarization &amp; Denoising</h3>
+                    <div class="card-text">
+                      <p>Created an adaptive Otsu binarization algorithm by tiling and analyzed effects of Gaussian and Bilateral filtering on noisy images.</p>
+                      <div class="project-links">
+                        
+                        
+                      </div>
+                    </div>
+                  </div>
+                
+                  <div class="card mt-3 p-3">
+                    <h3 class="card-title font-weight-medium">Image Classification with Transfer Learning</h3>
+                    <div class="card-text">
+                      <p>Fine-tuned pretrained convolutional neural networks on a custom dataset to perform accurate image classification using Keras and TensorFlow.</p>
+                      <div class="project-links">
+                        
+                        
+                      </div>
+                    </div>
+                  </div>
+                
+                  <div class="card mt-3 p-3">
+                    <h3 class="card-title font-weight-medium">Air Pollution Monitoring System</h3>
+                    <div class="card-text">
+                      <p>Designed a real-time air pollution monitoring system using Arduino and gas/humidity sensors, and displayed data on a live web dashboard.</p>
+                      <div class="project-links">
+                        
+                          <a href="https://github.com/YedMavus" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-primary mr-2">
+                            <i class="fab fa-github"></i> GitHub
+                          </a>
+                        
+                        
+                          <a href="https://iot-etciiest-project.netlify.app/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-secondary">
+                            <i class="fas fa-external-link-alt"></i> Demo
+                          </a>
+                        
+                      </div>
+                    </div>
+                  </div>
+                
+                  <div class="card mt-3 p-3">
+                    <h3 class="card-title font-weight-medium">Gilbert Cell Amplitude Modulator</h3>
+                    <div class="card-text">
+                      <p>Simulated and implemented a DSB-C amplitude modulator using a Gilbert Cell multiplier and an envelope detector. Tested on breadboard after NI Multisim simulation.</p>
+                      <div class="project-links">
+                        
+                        
+                      </div>
+                    </div>
+                  </div>
+                
+                  <div class="card mt-3 p-3">
+                    <h3 class="card-title font-weight-medium">ML Projects Compilation</h3>
+                    <div class="card-text">
+                      <p>Projects include MNIST digit classification, COVID-19 case prediction, transferred learning for dog breed classification, and Twitter sentiment analysis.</p>
+                      <div class="project-links">
+                        
+                        
+                      </div>
+                    </div>
+                  </div>
+                
+              
+                <h2 class="category">fun</h2>
+                
+                
+                  <div class="card mt-3 p-3">
+                    <h3 class="card-title font-weight-medium">Chrome Dino Game with Eye Blink Control</h3>
+                    <div class="card-text">
+                      <p>Used OpenCV and facial landmark detection to create a version of the Chrome Dino game controlled by eye-blinks. Useful as an accessibility demo.</p>
+                      <div class="project-links">
+                        
+                          <a href="https://github.com/YedMavus/Blink_Dino" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-primary mr-2">
+                            <i class="fab fa-github"></i> GitHub
+                          </a>
+                        
+                        
+                      </div>
+                    </div>
+                  </div>
+                
+                  <div class="card mt-3 p-3">
+                    <h3 class="card-title font-weight-medium">Snake Game in Python</h3>
+                    <div class="card-text">
+                      <p>Rebuilt the nostalgic Snake game using Python and OOP concepts. A testbed for future reinforcement learning experiments.</p>
+                      <div class="project-links">
+                        
+                          <a href="https://github.com/YedMavus/snake" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-primary mr-2">
+                            <i class="fab fa-github"></i> GitHub
+                          </a>
+                        
+                        
+                      </div>
+                    </div>
+                  </div>
+                
+              
+            </div>
           </article>
 
         </div>
