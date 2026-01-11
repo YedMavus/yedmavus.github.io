@@ -15,6 +15,12 @@
     - title: E9:201 Digital Signal Processing
       institution: #Aug-Dec 2021
       year: Aug-Dec 2025
+- title: Indian Institute of Science
+  type: time_table
+  contents:
+    - title: E2 236 Foundations of Machine Learning (FoML)
+      institution: #Aug-Dec 2021
+      year: Jan-May 2026
 
 #      description:
 #         - Description 1.
