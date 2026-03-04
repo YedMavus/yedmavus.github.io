@@ -49,6 +49,10 @@
 <lastmod>2022-02-01T17:39:00+00:00</lastmod>
 </url>
 <url>
+<loc>https://yedmavus.github.io/blogs/2026/continual-papers/</loc>
+<lastmod>2026-03-03T00:01:00+00:00</lastmod>
+</url>
+<url>
 <loc>https://yedmavus.github.io/</loc>
 </url>
 <url>
@@ -88,10 +92,16 @@
 <loc>https://yedmavus.github.io/blogs/tag/math/</loc>
 </url>
 <url>
+<loc>https://yedmavus.github.io/blogs/tag/cl/</loc>
+</url>
+<url>
 <loc>https://yedmavus.github.io/blogs/category/sample-posts/</loc>
 </url>
 <url>
 <loc>https://yedmavus.github.io/blogs/category/external-services/</loc>
+</url>
+<url>
+<loc>https://yedmavus.github.io/blogs/category/continual-learning/</loc>
 </url>
 <url>
 <loc>https://yedmavus.github.io/blogs/2015/</loc>
@@ -104,5 +114,8 @@
 </url>
 <url>
 <loc>https://yedmavus.github.io/blogs/2022/</loc>
+</url>
+<url>
+<loc>https://yedmavus.github.io/blogs/2026/</loc>
 </url>
 </urlset>
