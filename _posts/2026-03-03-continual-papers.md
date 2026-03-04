@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Continual Learning Papers
-date: 2026-03-05 00:01:00
+date: 2026-03-03 00:01:00
 description: Discusses recently read continual learning papers
 tags: CL
 categories: Continual-Learning
