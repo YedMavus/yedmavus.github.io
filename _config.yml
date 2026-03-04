@@ -120,10 +120,10 @@ bing_site_verification:  # out your bing-site-verification ID (Bing Webmaster)
 # Blog
 # -----------------------------------------------------------------------------
 
-#blog_name: al-folio # blog_name will be displayed in your blog page
-#blog_nav_title: blog # your blog must have a title for it to be displayed in the nav bar
-#blog_description: a simple whitespace theme for academics
-#permalink: /blog/:year/:title/
+blog_name: Suvam's Blog # blog_name will be displayed in your blog page
+blog_nav_title: blogs # your blog must have a title for it to be displayed in the nav bar
+blog_description: Thoughts, research notes, and more
+permalink: /blogs/:year/:title/
 
 # Pagination
 pagination:
@@ -250,11 +250,11 @@ jekyll-archives:
     tag: archive-tag
     category: archive-category
   permalinks:
-    year: '/blog/:year/'
-    tag: '/blog/tag/:name/'
-    category: '/blog/category/:name/'
+    year: '/blogs/:year/'
+    tag: '/blogs/tag/:name/'
+    category: '/blogs/category/:name/'
 
-display_tags: ['formatting', 'images', 'links', 'math', 'code'] # this tags will be dispalyed on the front page of your blog
+display_tags: ['formatting', 'images', 'links', 'math', 'code'] # these tags will be displayed on the front page of your blog
 
 # -----------------------------------------------------------------------------
 # Jekyll Scholar
