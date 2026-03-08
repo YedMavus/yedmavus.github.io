@@ -1,3 +1,12 @@
+---
+layout: post
+title: What am I working on currently and other ideas
+date: 2026-03-07 00:01:00
+description: Brainstorming ideas and current projects
+tags: Ideas, CL
+categories: Continual-Learning
+---
+
 # What am I working on currently? What ideas do I have?
 
 Currently, for my masters thesis, I have been working on continual learning using CLIP. In this regard, I have come across the XTAIL [^1] (cross domain task agnostic incremental learning) benchmark, in which the CLIP model is adapted across multiple tasks, with each task being a different dataset and with different classes. The datasets span multiple domains like satellite image, natural domain, mnist, etc. The model is tested across all tasks, after training on each task, so both seen and unseen classes are tested.
