@@ -5,7 +5,7 @@ date: 2026-03-07 00:01:00
 description: Brainstorming ideas and current projects
 tags: Ideas, CL
 categories: Continual-Learning
-bibliography: march26-bib
+bibliography: march26-bib.bib
 ---
 
 # What am I working on currently? What ideas do I have?
