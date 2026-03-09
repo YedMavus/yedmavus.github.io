@@ -19,8 +19,16 @@ Again this is like a separate branch for classifying the same thing.
 
 Ideally, in CLIP model any set of class names can be passed and the CLIP model is able to predict in that label space, here we are constraining CLIP to only be able to predict properly within the seen label space, otherwise a ZS CLIP output is given.
 
-[^1]:Xu, Y., Chen, Y., Nie, J., Wang, Y., Zhuang, H., & Okumura, M. (2024). Advancing cross-domain discriminability in continual learning of vision-language models. Advances in Neural Information Processing Systems, 37, 51552-51576.
+
 
 I want to suggest a way where the CLIP model can itself be adapted without needing to store classifiers - so we can pass any order of classes to text embedding and the model predicts it - and doesnt undergo catastrophic forgetting on seen classes.
+
+---
+
+What lacks in current AI models, especially generative models is a method of authentication. I will explain what I mean.
+When one asks the model to generate a "forged" image, say superimposing a face on top of a celebrity at cannes - there should be an accurate method to allow for authentication - we should only allow the user to manipulate with his/her own face not with someone elses. This could take care of the problem in twitter where people ask grok to generate images of other people in questionable clothing or worse... and grok does it which is a serious ethical and privacy violation.
+
+
+I haven't seen much research in this regard - there has been work done on unlearning particular entities that had been present in training data, but that is quite expensive and is done adaptively, not inherent to the model.
 
 [^1]: Xu, Yicheng, Yuxin Chen, Jiahao Nie, Yusong Wang, Huiping Zhuang, and Manabu Okumura. "Advancing cross-domain discriminability in continual learning of vision-language models." Advances in Neural Information Processing Systems 37 (2024): 51552-51576.
