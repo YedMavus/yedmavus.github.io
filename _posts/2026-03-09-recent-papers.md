@@ -115,7 +115,9 @@ $$h'_l = \beta_c C_l^f h_l$$
 where $$C$$ has eigenvalues $$\in [0,1]$$.
 Before, vectors were translated, and now they are projected on to an ellipsoid, that represents where task activations live.
 
-
+From the paper: 
+"the conceptor “softly projects” the activation vector $$h_l$$ toward the pattern represented by $$C_l^f$$ by scaling its components according to the patterns’
+principal directions."
 
 
 
