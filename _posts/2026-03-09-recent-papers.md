@@ -30,6 +30,6 @@ Context: Foundation models often compress information about multiple different t
 Now if we are able to understand which part of the ViT is responsible for classifying a particular task, we can make its learning rate higher when a similar kind of task appears, while keeping other parts less learnable (remember **SLCA**: Slow Learner with Classifier Alignment).
 
 
-In [^2], they train SAEs on CLIP's Vision transformer. They found that $10-15\%$ of neurons and features are steerable - which could be utilized. Another observation: The $L_0$ values of SAEs trained on spatial tokens are higher at center of image, with higher L0 values than the CLS token or the language model's SAEs. Thus, language and vision models could have different sparsity.
+In [^2], they train SAEs on CLIP's Vision transformer. They found that $$10-15\%$$ of neurons and features are steerable - which could be utilized. Another observation: The $$L_0$$ values of SAEs trained on spatial tokens are higher at center of image, with higher L0 values than the CLS token or the language model's SAEs. Thus, language and vision models could have different sparsity.
 
 [^2]: Joseph, S., Suresh, P., Goldfarb, E., Hufe, L., Gandelsman, Y., Graham, R., Bzdok, D., Samek, W. and Richards, B.A., 2025. Steering CLIP's vision transformer with sparse autoencoders. arXiv preprint arXiv:2504.08729.
