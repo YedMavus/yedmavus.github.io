@@ -41,7 +41,7 @@ where $$n_j\in R^{d_{model}}$$ are normalized vectors and feature activations $$
 represents bias.
 
 The papers `Interpreting CLIP with
-sparse linear concept embeddings (spliCE).` and `eyond scalars: Concept-based
+sparse linear concept embeddings (spliCE).` and  `beyond scalars: Concept-based
 alignment analysis in vision transformers.`
  demonstrate CLIP's internal representations align naturally with human interpretable concepts.
 
@@ -77,8 +77,55 @@ I didnt care about the evaluation metric here, so wont comment.
 
 ---
 
+
+# Steering Large Language Models using Conceptors: Improving Addition-Based Activation Engineering
+NeurIPS 2024 MINT Workshop paper
+
+Authors: Postmus, Abreu from Groningen
+
+
+Proposes using "conceptors" for steering LLM outputs (AKA activation engineering).
+Conceptors are mathematical constructs representing sets of activation vectors as ellipsoidal regions - soft projection matrices.
+
+
+**Activation engineering:** Steering method which directly modifiees model's activations at inference without changing model params or optimization. Steering vector representing the desired behavor is computed directly or contrastively from pos and neg examples.
+
+Here cached activations are used to compute a *conceptor*  or a steering matrix. Activations are softly projected using matrix vector multiplication instead of directly adding to LLM activations.
+
+It is kind of like having separate activation (like ReLU) conditioned on the activations.
+Modified activation from the network output activation $$h$$ is 
+$$h' = Ch$$ where $$C$$ is the image embedding at a particular layer.
+
+In concept steering, prompts like good:bad, hot:cold etc are given called in-context prompts.
+These mappings are learned by the model implictly, and the hidden activation at some layer l is found for each such prompt - $$h_l(p_i)$$ that encodes representation of the function model is performing.
+The steering vector is then found by 
+$$\bar{h_l^f}  = \frac{1}{|P_f|} \sum_{p_i \in P_f} h_l(p_i)$$
+
+
+
+
+
+During inference $$h' = h'+ \beta_{add} \bar{h_l^f}$$
+
+Thus model gives opposites (for this example).
+
+Conceptors instead act as a soft filter 
+
+$$h'_l = \beta_c C_l^f h_l$$
+where $$C$$ has eigenvalues $$\in [0,1]$$.
+Before, vectors were translated, and now they are projected on to an ellipsoid, that represents where task activations live.
+
+
+
+
+
+
+
+
+
 # Model Steering: Learning with a Reference Model Improves Generalization Bounds and Scaling Laws
  ICML 2025 Spotlight
+
  Authors: Wei, Lin, Yang et al
 
 
