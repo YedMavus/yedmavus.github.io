@@ -79,7 +79,7 @@ I didnt care about the evaluation metric here, so wont comment.
 
 
 # Steering Large Language Models using Conceptors: Improving Addition-Based Activation Engineering
-NeurIPS 2024 MINT Workshop paper
+NeurIPS 2024 MINT Workshop paper [^3]
 
 Authors: Postmus, Abreu from Groningen
 
@@ -120,15 +120,35 @@ From the paper:
 principal directions."
 
 
-
+[^3]: Postmus, J. and Abreu, S., 2024. Steering large language models using conceptors: Improving addition-based activation engineering. arXiv preprint arXiv:2410.16314.
 
 
 
 
 # Model Steering: Learning with a Reference Model Improves Generalization Bounds and Scaling Laws
- ICML 2025 Spotlight
+ ICML 2025 Spotlight [^4]
 
  Authors: Wei, Lin, Yang et al
+
+To Do: Use a trained model as a reference to guide and enhance the training of a target model via strategic data selection or weighting - kind of like WiSE-FT!
+
+This is named **model steering**
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[^4]: Wei, X., Lin, M., Ye, F., Song, F., Cao, L., Thai, M.T. and Yang, T., 2025. Model steering: Learning with a reference model improves generalization bounds and scaling laws. arXiv preprint arXiv:2505.06699.
 
 
 
