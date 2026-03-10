@@ -25,10 +25,11 @@ This could be used in continual learning.
 CVPR Workshop on Mechanistic Interpratibility for Vision
 Paper from MILA: Joseph, Suresh, Richards et al
 
-Context: Foundation models often compress information about multiple different things to a single neuron weight, making these not very interpretable. In language models with transformers, sparse autoenoders have helped to make language models based on transformers interpretable, by learning using internal activations of transformer layers. Since only a few features are allowed to activate at once, it is forced to learn disentangled features making the vectors interpretable.
+Context: Foundation models often compress information about multiple different things to a single neuron weight (**polysemantic**), making these not very interpretable. In language models with transformers, sparse autoenoders have helped to make language models based on transformers interpretable, by learning using internal activations of transformer layers. Since only a few features are allowed to activate at once, it is forced to learn disentangled features making the vectors interpretable.
 
-Now if we are able to understand which part of the ViT is responsible for classifying a particular task, we can make its learning rate higher when a similar kind of task appears, while keeping other parts less learnable (remember SLCA: Slow Learner with Classifier Alignment).
+Now if we are able to understand which part of the ViT is responsible for classifying a particular task, we can make its learning rate higher when a similar kind of task appears, while keeping other parts less learnable (remember **SLCA**: Slow Learner with Classifier Alignment).
 
-In [^2], they train SAEs on CLIP's Vision transformer.
+
+In [^2], they train SAEs on CLIP's Vision transformer. They found that $10-15\%$ of neurons and features are steerable - which could be utilized. Another observation: The $L_0$ values of SAEs trained on spatial tokens are higher at center of image, with higher L0 values than the CLS token or the language model's SAEs. Thus, language and vision models could have different sparsity.
 
 [^2]: Joseph, S., Suresh, P., Goldfarb, E., Hufe, L., Gandelsman, Y., Graham, R., Bzdok, D., Samek, W. and Richards, B.A., 2025. Steering CLIP's vision transformer with sparse autoencoders. arXiv preprint arXiv:2504.08729.
