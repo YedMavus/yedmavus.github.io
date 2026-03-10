@@ -1,12 +1,28 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="https://yedmavus.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://yedmavus.github.io/" rel="alternate" type="text/html" hreflang="en" /><updated>2026-03-09T19:24:48+00:00</updated><id>https://yedmavus.github.io/feed.xml</id><title type="html">blank</title><subtitle>A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="https://yedmavus.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://yedmavus.github.io/" rel="alternate" type="text/html" hreflang="en" /><updated>2026-03-10T06:48:16+00:00</updated><id>https://yedmavus.github.io/feed.xml</id><title type="html">blank</title><subtitle>A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
 </subtitle><entry><title type="html">Recent Interesting Papers</title><link href="https://yedmavus.github.io/blogs/2026/recent-papers/" rel="alternate" type="text/html" title="Recent Interesting Papers" /><published>2026-03-08T00:01:00+00:00</published><updated>2026-03-08T00:01:00+00:00</updated><id>https://yedmavus.github.io/blogs/2026/recent-papers</id><content type="html" xml:base="https://yedmavus.github.io/blogs/2026/recent-papers/"><![CDATA[<h1 id="wiseft-robust-fine-tuning-of-zero-shot-models">WiseFT: Robust fine-tuning of zero-shot models</h1>
 
-<p>Large pretrained models like CLIP give great zero shot performance, and even better finetuned performances on datasets. However, this leads to reduction in robustness to distribution shifts and catastrophic forgetting. WiseFT <sup id="fnref:1"><a href="#fn:1" class="footnote" rel="footnote" role="doc-noteref">1</a></sup> deals with this problem, by ensembling the weights of zero shot  model and finetuned model.</p>
+<p>Large pretrained models like CLIP give great zero shot performance, and even better finetuned performances on datasets. However, this leads to reduction in robustness to distribution shifts and catastrophic forgetting. WiseFT <sup id="fnref:1"><a href="#fn:1" class="footnote" rel="footnote" role="doc-noteref">1</a></sup> deals with this problem, by ensembling the weights of zero shot  model and finetuned model.
+This could be used in continual learning.</p>
+
+<hr />
+
+<h1 id="steering-clips-vision-transformer-with-sparse-autoencoders">Steering CLIP’s vision transformer with sparse autoencoders</h1>
+<p>CVPR Workshop on Mechanistic Interpratibility for Vision
+Paper from MILA: Joseph, Suresh, Richards et al</p>
+
+<p>Context: Foundation models often compress information about multiple different things to a single neuron weight, making these not very interpretable. In language models with transformers, sparse autoenoders have helped to make language models based on transformers interpretable, by learning using internal activations of transformer layers. Since only a few features are allowed to activate at once, it is forced to learn disentangled features making the vectors interpretable.</p>
+
+<p>Now if we are able to understand which part of the ViT is responsible for classifying a particular task, we can make its learning rate higher when a similar kind of task appears, while keeping other parts less learnable (remember SLCA: Slow Learner with Classifier Alignment).</p>
+
+<p>In <sup id="fnref:2"><a href="#fn:2" class="footnote" rel="footnote" role="doc-noteref">2</a></sup>, they train SAEs on CLIP’s Vision transformer.</p>
 
 <div class="footnotes" role="doc-endnotes">
   <ol>
     <li id="fn:1">
       <p>Wortsman, M., Ilharco, G., Kim, J.W., Li, M., Kornblith, S., Roelofs, R., Lopes, R.G., Hajishirzi, H., Farhadi, A., Namkoong, H. and Schmidt, L., 2022. Robust fine-tuning of zero-shot models. In Proceedings of the IEEE/CVF conference on computer vision and pattern recognition (pp. 7959-7971). <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:2">
+      <p>Joseph, S., Suresh, P., Goldfarb, E., Hufe, L., Gandelsman, Y., Graham, R., Bzdok, D., Samek, W. and Richards, B.A., 2025. Steering CLIP’s vision transformer with sparse autoencoders. arXiv preprint arXiv:2504.08729. <a href="#fnref:2" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
     </li>
   </ol>
 </div>]]></content><author><name></name></author><category term="AI" /><category term="and" /><category term="Science" /><category term="AI" /><summary type="html"><![CDATA[Discusses recently read papers in AI I found interesting]]></summary></entry><entry><title type="html">What am I working on currently and other ideas</title><link href="https://yedmavus.github.io/blogs/2026/current-research/" rel="alternate" type="text/html" title="What am I working on currently and other ideas" /><published>2026-03-07T00:01:00+00:00</published><updated>2026-03-07T00:01:00+00:00</updated><id>https://yedmavus.github.io/blogs/2026/current-research</id><content type="html" xml:base="https://yedmavus.github.io/blogs/2026/current-research/"><![CDATA[<p>Currently, for my masters thesis, I have been working on continual learning using CLIP. In this regard, I have come across the XTAIL <sup id="fnref:1"><a href="#fn:1" class="footnote" rel="footnote" role="doc-noteref">1</a></sup> <d-cite key="xu2024advancing"></d-cite> (cross domain task agnostic incremental learning) benchmark, in which the CLIP model is adapted across multiple tasks, with each task being a different dataset and with different classes. The datasets span multiple domains like satellite image, natural domain, mnist, etc. The model is tested across all tasks, after training on each task, so both seen and unseen classes are tested.</p>

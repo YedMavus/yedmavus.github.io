@@ -138,12 +138,28 @@
   <article class="post-content">
     <h1 id="wiseft-robust-fine-tuning-of-zero-shot-models">WiseFT: Robust fine-tuning of zero-shot models</h1>
 
-<p>Large pretrained models like CLIP give great zero shot performance, and even better finetuned performances on datasets. However, this leads to reduction in robustness to distribution shifts and catastrophic forgetting. WiseFT <sup id="fnref:1"><a href="#fn:1" class="footnote" rel="footnote" role="doc-noteref">1</a></sup> deals with this problem, by ensembling the weights of zero shot  model and finetuned model.</p>
+<p>Large pretrained models like CLIP give great zero shot performance, and even better finetuned performances on datasets. However, this leads to reduction in robustness to distribution shifts and catastrophic forgetting. WiseFT <sup id="fnref:1"><a href="#fn:1" class="footnote" rel="footnote" role="doc-noteref">1</a></sup> deals with this problem, by ensembling the weights of zero shot  model and finetuned model.
+This could be used in continual learning.</p>
+
+<hr>
+
+<h1 id="steering-clips-vision-transformer-with-sparse-autoencoders">Steering CLIP’s vision transformer with sparse autoencoders</h1>
+<p>CVPR Workshop on Mechanistic Interpratibility for Vision
+Paper from MILA: Joseph, Suresh, Richards et al</p>
+
+<p>Context: Foundation models often compress information about multiple different things to a single neuron weight, making these not very interpretable. In language models with transformers, sparse autoenoders have helped to make language models based on transformers interpretable, by learning using internal activations of transformer layers. Since only a few features are allowed to activate at once, it is forced to learn disentangled features making the vectors interpretable.</p>
+
+<p>Now if we are able to understand which part of the ViT is responsible for classifying a particular task, we can make its learning rate higher when a similar kind of task appears, while keeping other parts less learnable (remember SLCA: Slow Learner with Classifier Alignment).</p>
+
+<p>In <sup id="fnref:2"><a href="#fn:2" class="footnote" rel="footnote" role="doc-noteref">2</a></sup>, they train SAEs on CLIP’s Vision transformer.</p>
 
 <div class="footnotes" role="doc-endnotes">
   <ol>
     <li id="fn:1">
       <p>Wortsman, M., Ilharco, G., Kim, J.W., Li, M., Kornblith, S., Roelofs, R., Lopes, R.G., Hajishirzi, H., Farhadi, A., Namkoong, H. and Schmidt, L., 2022. Robust fine-tuning of zero-shot models. In Proceedings of the IEEE/CVF conference on computer vision and pattern recognition (pp. 7959-7971). <a href="#fnref:1" class="reversefootnote" role="doc-backlink">↩</a></p>
+    </li>
+    <li id="fn:2">
+      <p>Joseph, S., Suresh, P., Goldfarb, E., Hufe, L., Gandelsman, Y., Graham, R., Bzdok, D., Samek, W. and Richards, B.A., 2025. Steering CLIP’s vision transformer with sparse autoencoders. arXiv preprint arXiv:2504.08729. <a href="#fnref:2" class="reversefootnote" role="doc-backlink">↩</a></p>
     </li>
   </ol>
 </div>
@@ -157,7 +173,7 @@
     <footer class="fixed-bottom">
       <div class="container mt-0">
         © Copyright 2026 Suvam  Dey. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub Pages</a>.
-Last updated: March 09, 2026.
+Last updated: March 10, 2026.
       </div>
     </footer>
 
