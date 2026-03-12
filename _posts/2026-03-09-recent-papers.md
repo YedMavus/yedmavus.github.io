@@ -88,6 +88,9 @@ Proposes using "conceptors" for steering LLM outputs (AKA activation engineering
 Conceptors are mathematical constructs representing sets of activation vectors as ellipsoidal regions - soft projection matrices.
 
 
+*Conceptors are high dimensional ellipsoids which describe the overall shape and spread of the activations' underlying pattern or state space region.* Captures correlations between activations.
+Each conceptor thus corresponds to a pattern of activations. Projecting an activation on one particular pattern helps to "steer" the output to only that pattern. **Multiple patterns can be enforced by boolean operations on multiple conceptors.**
+
 **Activation engineering:** Steering method which directly modifiees model's activations at inference without changing model params or optimization. Steering vector representing the desired behavor is computed directly or contrastively from pos and neg examples.
 
 Here cached activations are used to compute a *conceptor*  or a steering matrix. Activations are softly projected using matrix vector multiplication instead of directly adding to LLM activations.
@@ -178,7 +181,9 @@ For classifier alignment, a number of samples are drawn from the Gaussian models
 In other words:
 
 **Summary of process:** Take current samples from $$c \in C^t$$, obtain features using $$f_{t-1}$$ to get mean and cov $$\mu_c, \Sigma_c^{t-1}$$.
-Next using these samples train and obtain $$f_t$$
+Next using these samples train and obtain $$f_t$$, which finishes training the feature extractor. Next we need to train the classifier to ensure catastrophic forgetting doesnt occur.
+
+
 Post training, for $$c \in \bigcup_{i=1}^{t-1}C^i$$ draw s samples for each class from all prev tasks and estimate and compensate the class mean shift using $$\mu_c^t = \mu_c^{t-1} + \Delta\mu_c^{t-1\rightarrow t}$$
 
 Sample from Gaussian with $$\mu_c, \Sigma_c$$ to retrain classifiers upto task t and store the new mean and covariance.
