@@ -1,5 +1,19 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="https://yedmavus.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://yedmavus.github.io/" rel="alternate" type="text/html" hreflang="en" /><updated>2026-03-12T19:17:48+00:00</updated><id>https://yedmavus.github.io/feed.xml</id><title type="html">blank</title><subtitle>A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
-</subtitle><entry><title type="html">Recent Interesting Papers</title><link href="https://yedmavus.github.io/blogs/2026/recent-papers/" rel="alternate" type="text/html" title="Recent Interesting Papers" /><published>2026-03-08T00:01:00+00:00</published><updated>2026-03-08T00:01:00+00:00</updated><id>https://yedmavus.github.io/blogs/2026/recent-papers</id><content type="html" xml:base="https://yedmavus.github.io/blogs/2026/recent-papers/"><![CDATA[<h1 id="wiseft-robust-fine-tuning-of-zero-shot-models">WiseFT: Robust fine-tuning of zero-shot models</h1>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="https://yedmavus.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://yedmavus.github.io/" rel="alternate" type="text/html" hreflang="en" /><updated>2026-03-14T06:05:22+00:00</updated><id>https://yedmavus.github.io/feed.xml</id><title type="html">blank</title><subtitle>A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
+</subtitle><entry><title type="html">Good Resources</title><link href="https://yedmavus.github.io/blogs/2026/good-resources/" rel="alternate" type="text/html" title="Good Resources" /><published>2026-03-12T00:00:00+00:00</published><updated>2026-03-12T00:00:00+00:00</updated><id>https://yedmavus.github.io/blogs/2026/good-resources</id><content type="html" xml:base="https://yedmavus.github.io/blogs/2026/good-resources/"><![CDATA[<hr />
+<p>layout: post
+title: Good Resources that have helped shape my research ideas
+date: 2026-03-13 00:01:00
+description: Resources that have helped shape my research ideas
+tags: Science, AI, Research
+categories: General
+—</p>
+
+<p>Useful websites and resources that have helped shape my research ideas:</p>
+
+<ul>
+  <li>https://nicholas.carlini.com/writing/2026/how-to-win-a-best-paper-award.html</li>
+  <li>https://forum-bots.effectivealtruism.org/posts/puEjjCAHkbrLz8nbc/my-research-process-understanding-and-cultivating-research</li>
+</ul>]]></content><author><name></name></author><summary type="html"><![CDATA[layout: post title: Good Resources that have helped shape my research ideas date: 2026-03-13 00:01:00 description: Resources that have helped shape my research ideas tags: Science, AI, Research categories: General —]]></summary></entry><entry><title type="html">Recent Interesting Papers</title><link href="https://yedmavus.github.io/blogs/2026/recent-papers/" rel="alternate" type="text/html" title="Recent Interesting Papers" /><published>2026-03-08T00:01:00+00:00</published><updated>2026-03-08T00:01:00+00:00</updated><id>https://yedmavus.github.io/blogs/2026/recent-papers</id><content type="html" xml:base="https://yedmavus.github.io/blogs/2026/recent-papers/"><![CDATA[<h1 id="wiseft-robust-fine-tuning-of-zero-shot-models">WiseFT: Robust fine-tuning of zero-shot models</h1>
 
 <p>Large pretrained models like CLIP give great zero shot performance, and even better finetuned performances on datasets. However, this leads to reduction in robustness to distribution shifts and catastrophic forgetting. WiseFT <sup id="fnref:1"><a href="#fn:1" class="footnote" rel="footnote" role="doc-noteref">1</a></sup> deals with this problem, by ensembling the weights of zero shot  model and finetuned model.
 This could be used in continual learning.</p>
