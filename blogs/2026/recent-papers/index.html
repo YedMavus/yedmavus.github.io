@@ -266,12 +266,23 @@ The Covariance shift is also minimized using \(L_{cov}\).</p>
 
 <p>In other words:</p>
 
-<p><strong>Summary of process:</strong> Take current samples from \(c \in C^t\), obtain features using \(f_{t-1}\) to get mean and cov \(\mu_c, \Sigma_c^{t-1}\).
-Next using these samples train and obtain \(f_t\), which finishes training the feature extractor. Next we need to train the classifier to ensure catastrophic forgetting doesnt occur.</p>
+<p><strong>Summary of process:</strong> Take current samples from \(c \in C^t\), obtain features using \(f_{t-1}\) to get mean and cov \(\mu_c, \Sigma_c^{t-1}\).</p>
+
+<p>Before training, we compute the old train model’s embeddings using the train data as above.
+Next using these samples train and obtain \(f_t\), which finishes training the feature extractor. Now after training, we need to obtain how the embeddings have changed, which is computed using the new model and the same training features. 
+We obtain the “gap” matrix: which is 
+<code class="language-plaintext highlighter-rouge">self.displacement(train_embeddings_old, train_embeddings_new, old_class_mean, 1.0)</code></p>
+
+<p>DY - how much each embedding has shifted.
+next we get the euclidean distances between the two vectors for each class.</p>
+
+<p>Next we need to train the classifier to ensure catastrophic forgetting doesnt occur.</p>
 
 <p>Post training, for \(c \in \bigcup_{i=1}^{t-1}C^i\) draw s samples for each class from all prev tasks and estimate and compensate the class mean shift using \(\mu_c^t = \mu_c^{t-1} + \Delta\mu_c^{t-1\rightarrow t}\)</p>
 
 <p>Sample from Gaussian with \(\mu_c, \Sigma_c\) to retrain classifiers upto task t and store the new mean and covariance.</p>
+
+<hr>
 
 <div class="footnotes" role="doc-endnotes">
   <ol>
@@ -302,7 +313,7 @@ Next using these samples train and obtain \(f_t\), which finishes training the f
     <footer class="fixed-bottom">
       <div class="container mt-0">
         © Copyright 2026 Suvam  Dey. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub Pages</a>.
-Last updated: March 14, 2026.
+Last updated: March 17, 2026.
       </div>
     </footer>
 
