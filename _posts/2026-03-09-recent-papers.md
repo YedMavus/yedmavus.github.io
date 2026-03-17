@@ -181,14 +181,64 @@ For classifier alignment, a number of samples are drawn from the Gaussian models
 In other words:
 
 **Summary of process:** Take current samples from $$c \in C^t$$, obtain features using $$f_{t-1}$$ to get mean and cov $$\mu_c, \Sigma_c^{t-1}$$.
-Next using these samples train and obtain $$f_t$$, which finishes training the feature extractor. Next we need to train the classifier to ensure catastrophic forgetting doesnt occur.
+
+Before training, we compute the old train model's embeddings using the train data as above.
+Next using these samples train and obtain $$f_t$$, which finishes training the feature extractor. Now after training, we need to obtain how the embeddings have changed, which is computed using the new model and the same training features. 
+We obtain the "gap" matrix: which is 
+`self.displacement(train_embeddings_old, train_embeddings_new, old_class_mean, 1.0)`
+
+DY - how much each embedding has shifted.
+next we get the euclidean distances between the two vectors for each class.
+
+
+
+
+
+Next we need to train the classifier to ensure catastrophic forgetting doesnt occur.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 Post training, for $$c \in \bigcup_{i=1}^{t-1}C^i$$ draw s samples for each class from all prev tasks and estimate and compensate the class mean shift using $$\mu_c^t = \mu_c^{t-1} + \Delta\mu_c^{t-1\rightarrow t}$$
 
+
+
 Sample from Gaussian with $$\mu_c, \Sigma_c$$ to retrain classifiers upto task t and store the new mean and covariance.
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+---
 
 
 
