@@ -12,3 +12,4 @@ Useful websites and resources that have helped shape my research ideas:
 
 - https://nicholas.carlini.com/writing/2026/how-to-win-a-best-paper-award.html
 - https://forum-bots.effectivealtruism.org/posts/puEjjCAHkbrLz8nbc/my-research-process-understanding-and-cultivating-research
+- https://emerge-lab.github.io/papers/an-unsolicited-guide-to-good-research.pdf
